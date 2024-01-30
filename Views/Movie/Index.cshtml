@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Movie List";
+
+    var list = ViewBag.List;
+}
+
+<h2>My Movie List</h2>
+
+@for (int i = 0; i < list.Count; i++)
+{
+    <div>
+        @* @list[i].ToString() *@
+        
+        @list[i].Id.ToString()
+        @list[i].Title.ToString()
+    </div>
+}
+
+
